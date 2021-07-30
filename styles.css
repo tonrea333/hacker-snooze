@@ -1,0 +1,10 @@
+#mastertable {
+background-color: rgb(71, 64, 64);
+width:max-content;
+color:blanchedalmond;
+
+}
+
+@media screen and (max-width: 700vh) {
+    
+}
