@@ -5,6 +5,8 @@ color:blanchedalmond;
 
 }
 
-@media screen and (max-width: 700vh) {
-    
+@media screen and (max-width: 400px) {
+    #mastertable{ 
+  background-color: red;
+}
 }
