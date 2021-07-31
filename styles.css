@@ -1,12 +1,40 @@
-#mastertable {
+#masterbody {
 background-color: rgb(71, 64, 64);
 width:max-content;
-color:blanchedalmond;
+padding-left: 10vw;
 
+}
+
+#masterdiv {
+    background-color: black;
+    width: 80vw;
+    height: 80vh;
+    color: blanchedalmond;
+   
+}
+
+
+
+@media screen and (max-width: 400px) {
+    #masterbody{ 
+  background-color: red;
+}
 }
 
 @media screen and (max-width: 400px) {
-    #mastertable{ 
-  background-color: red;
+    #masterdiv{
+        background-color: green;
+        font-size:3vh;
+    }
 }
+
+#toptr :hover {
+    cursor: pointer;
+    display: flex;
+    
+}
+#spacebetween {
+    height: 3vh;
+    width: 100%;
+    background-color: tan;
 }
