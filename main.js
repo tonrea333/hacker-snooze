@@ -50,10 +50,12 @@ function onClick() {
                 const url = data.url;
                 const by = data.by;
     
-                tableHeader.innerText = title
-                console.log(url)
-const randomUrl = new URL(tableHeader.innerText, url)
-                console.log(randomUrl)
+                
+                
+let a = title.link(url)
+console.log(tableHeader.innerText)
+tableHeader.innerHTML = a
+
             })
         })
        
