@@ -1,0 +1,56 @@
+#masterbody {
+    background-color: rgb(71, 64, 64);
+    width:max-content;
+    padding-left: 10vw;
+    
+    }
+    
+    #masterdiv {
+        background-color: black;
+        width: 80vw;
+        height: 140vh;
+        color: blanchedalmond;
+       
+    }
+    
+    
+    
+    @media screen and (max-width: 700px) {
+        #masterbody{ 
+      background-color: red;
+    }
+    }
+    
+    @media screen and (max-width: 700px) {
+        #masterdiv{
+            background-color: green;
+            font-size:3vh;
+        }
+    }
+    
+    #toptr :hover {
+        cursor: pointer;
+        display: flex;
+        
+    }
+    #spacebetween {
+        height: 3vh;
+        width: 100%;
+        background-color: tan;
+    }
+    
+    a {
+        color: blanchedalmond;
+        padding-right: 10px;
+    }
+    #button2 {
+        height: 20px;
+        width: 60px;
+        background-color: darkgrey;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        text-transform: capitalize;
+       
+
+    }
