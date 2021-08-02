@@ -27,6 +27,8 @@ function onClick() {
 
 
 
+for(let i = 0; i < data.length; i++){
+    data[i] = data[i] + 1;
 
 
 
@@ -46,10 +48,10 @@ function onClick() {
 
 
            
-let i =0 
+            //let i =0 
 
-            new_arr = data.map(i => i +1)
-            console.log(new_arr)
+            //new_arr = data.map(i => i +1)
+            //console.log(new_arr)
             
 
             fetch("https://hacker-news.firebaseio.com/v0/item/" + data[i] + ".json?print=pretty")
@@ -59,7 +61,7 @@ let i =0
                 })
                 .then(function (data) {
                     console.log(data, "data2")
-                        console.log(i)
+                        //console.log(i)
                     
 
                     
@@ -98,7 +100,7 @@ let i =0
         })
 
 
-
+    }
 
 
 }
