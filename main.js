@@ -42,24 +42,27 @@ function onClick() {
 
 
         .then(function (data) {
-            console.log(data[1], "data)")
+            console.log(data[0], "data)")
 
 
-            let i = 0;
+           
+let i =0 
 
+            new_arr = data.map(i => i +1)
+            console.log(new_arr)
+            
 
-
-            console.log(i, "i")
-
-            fetch("https://hacker-news.firebaseio.com/v0/item/" + parseData + ".json?print=pretty")
+            fetch("https://hacker-news.firebaseio.com/v0/item/" + data[i] + ".json?print=pretty")
                 .then(function (bootdata) {
                     return bootdata.json();
-
+                    
                 })
                 .then(function (data) {
                     console.log(data, "data2")
+                        console.log(i)
+                    
 
-
+                    
 
                     tabledataDiv.appendChild(tableRow);
                     tableRow.appendChild(tableHeader);
@@ -67,7 +70,7 @@ function onClick() {
                     tableRow.appendChild(tableData);
                     tableData.append();
                     tabledataDiv.appendChild(tableRow);
-                    const title = parseData.title;
+                    const title = data.title;
                     const url = data.url;
                     const by = data.by;
 
@@ -89,7 +92,7 @@ function onClick() {
                     console.log(tableHeader.innerText);
                     tableHeader.innerHTML = a;
                     tableData.innerHTML = " by " + by;
-
+                    
                 })
 
         })
