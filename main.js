@@ -1,13 +1,19 @@
 //testing the hack news api
 //const hacknewApi = document.querySelector("#test");
 const buttonClick = document.querySelector("#button");
-;
+const askButton = document.querySelector("#ask");
 //const topstoriesArray = [];
 
 
+//Button to action "ask listing"
+askButton.addEventListener("click", onClick2);
+//function to redirect user to ask page
+ function onClick2(){
+ //let pageTwoJava = askButton.link()
+location.href = "index2.html"
 
+ }
 //Button to action listing 100 top stories
-
 buttonClick.addEventListener("click", onClick);
 
 function onClick() {
@@ -34,7 +40,7 @@ function onClick() {
             //function x() {
             //    y = y + 1
 
-                for (let i = 0; i < 50; i++) {
+                for (let i = 0; i < data.length; i++) {
                     data[i] = data[i] + 1;
 
                     //let i =0 
@@ -93,7 +99,7 @@ console.log(by)
                             console.log(tableHeader.innerText);
                             tableHeader.innerHTML = a;
                             tableData.innerHTML = " by " + by;
-                            tableData2.innerHTML = "Score "+" "+ score;
+                            tableData2.innerHTML = "Score: "+" "+ score;
 
                         })
                     // } articleGen()

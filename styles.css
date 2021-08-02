@@ -8,20 +8,20 @@ padding-left: 10vw;
 #masterdiv {
     background-color: black;
     width: 80vw;
-    height: 280vh;
+    height: 140vh;
     color: blanchedalmond;
    
 }
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
     #masterbody{ 
   background-color: red;
 }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
     #masterdiv{
         background-color: green;
         font-size:3vh;
@@ -42,4 +42,14 @@ padding-left: 10vw;
 a {
     color: blanchedalmond;
     padding-right: 10px;
+}
+#button {
+    height: 20px;
+    width: 60px;
+    background-color: darkgrey;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+
 }
